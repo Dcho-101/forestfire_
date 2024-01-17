@@ -5,7 +5,9 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
+
 
 ## import ridge regressor and standard scaler pickle
 ridge_model = pickle.load(open('models/ridge_1.pkl', 'rb'))
